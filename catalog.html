@@ -20,14 +20,24 @@
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </li>
                 </ul>
-                <ul class="main-navigation-user">
-                    <li class="main-navigation-user-item">
-                        Войти
-                    </li>
-                    <li class="main-navigation-user-item">
-                        Регистрация
-                    </li>
-                </ul>
+                <div class="main-navigation-user">
+                    <div class="main-navigation-user-login">
+                        <img alt="man">
+                        <span>Равшан Джамшутович</span>
+                        <button><img alt="log out"></button>
+                    </div>
+                    <ul class="main-navigation-user-list">
+                        <li class="main-navigation-user-list-item">
+                            <a>Мои заказы</a>
+                        </li>
+                        <li class="main-navigation-user-list-item">
+                            <a>Личный кабинет</a>
+                        </li>
+                        <li class="main-navigation-user-list-item">
+                            <a>Личный кабинет</a>
+                        </li>
+                    </ul>
+                </в>
                 <ul class="main-navigation-site">
                     <li class="main-navigation-site-item">
                         <a>Главная</a>
@@ -58,7 +68,7 @@
                 и инструментов для ремонта
             </p>
             <button class="main-bookmarks">Закладки: 0</button>
-            <button class="main-cart">Корзина: 0</button>
+            <button class="main-cart main-cart-active">Корзина: 10</button>
             <button class="main-checkout">Оформить заказ</button>
         </header>
         <section class="main-nav">
@@ -81,30 +91,131 @@
             </ul>
         </section>
         <h1>ПЕРФОРАТОРЫ</h1>
-        <section class="main-options">
-            <div class="main-options-filter">ФИЛЬТР:</div>
-            <div class="main-options-sort">
+        <section class="main-suggestions">
+            <div class="main-suggestions-filter">
+                ФИЛЬТР:
+                <!-- Здесь будет форма -->
+            </div>
+            <div class="main-suggestions-sort">
                 СОРТИРОВКА:
-                <ul class="main-options-sort-list">
-                    <li class="main-options-sort-list-item main-options-sort-list-item-active">
+                <ul class="main-suggestions-sort-list">
+                    <li class="main-suggestions-sort-list-item main-suggestions-sort-list-item-active">
                         ПО ЦЕНЕ
                     </li>
-                    <li class="main-options-sort-list-item">
+                    <li class="main-suggestions-sort-list-item">
                         ПО ТИПУ
                     </li>
-                    <li class="main-options-sort-list-item">
+                    <li class="main-suggestions-sort-list-item">
                         ПО ФУНКЦИОНАЛУ
                     </li>
-                    <li class="main-options-sort-list-item">
+                    <li class="main-suggestions-sort-list-item">
                         <img alt="up">
                     </li>
-                    <li class="main-options-sort-list-item">
+                    <li class="main-suggestions-sort-list-item">
                         <img alt="down">
                     </li>
                 </ul>
             </div>
+            <div class="main-suggestions-product">
+                <ul class="main-suggestions-product-list">
+                    <li class="main-suggestions-product-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 3000</h3>
+                        <span class="main-suggestions-product-list-price crossed">22500</span>
+                        <span class="main-suggestions-product-list-price">15500</span>
+                    </li>
+                    <li class="main-suggestions-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 6000</h3>
+                        <span class="main-suggestions-product-list-price crossed">30500</span>
+                        <span class="main-suggestions-product-list-price">25500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item main-suggestions-product-list-item-new">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 2000</h3>
+                        <span class="main-suggestions-product-list-price crossed"></span>
+                        <span class="main-suggestions-product-list-price">12500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 3000</h3>
+                        <span class="main-suggestions-product-list-price crossed">22500</span>
+                        <span class="main-suggestions-product-list-price">15500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item main-suggestions-product-list-item-new">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 6000</h3>
+                        <span class="main-suggestions-product-list-price crossed">30500</span>
+                        <span class="main-suggestions-product-list-price">25500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 2000</h3>
+                        <span class="main-suggestions-product-list-price crossed"></span>
+                        <span class="main-suggestions-product-list-price">12500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 3000</h3>
+                        <span class="main-suggestions-product-list-price crossed">22500</span>
+                        <span class="main-suggestions-product-list-price">15500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item main-suggestions-product-list-item-new">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 6000</h3>
+                        <span class="main-suggestions-product-list-price crossed">30500</span>
+                        <span class="main-suggestions-product-list-price">25500</span>
+                    </li>
+                    <li class="main-suggestions-product-list-item">
+                        <img width="184" height="147">
+                        <h3 class="main-suggestions-product-list-name">Перфоратор BOSCH BFG 2000</h3>
+                        <span class="main-suggestions-product-list-price crossed"></span>
+                        <span class="main-suggestions-product-list-price">12500</span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="main-suggestions-nav">
+                <ul class="main-suggestions-nav-list">
+                    <li class="main-suggestions-nav-list-item">
+                        <button class="main-suggestions-nav-button">1</button>
+                    </li>
+                    <li class="main-suggestions-nav-list-item">
+                        <button class="main-suggestions-nav-button">2</button>
+                    </li>
+                    <li class="main-suggestions-nav-list-item">
+                        <button class="main-suggestions-nav-button">3</button>
+                    </li>
+                </ul>
+                <button class="main-suggestions-nav-button">СЛЕДУЮЩАЯ</button>
+            </div>
         </section>
-        <!-- Здесь будет форма -->
+        <section class="main-description">
+            <h2 class="main-description-subtitle">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p class="main-description-pharagrah">
+                Перфоратор - универсальный строительный инструмент.
+                Предназначени для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+                Существуют электромеханические и пневмотические перфораторы.
+                Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+                В ассортиментном ряду есть выбор "трехрежимников":
+                в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+        </section>
+        <section class="main-add">
+            <div class="main-add-up">
+                <img alt="ok">
+                <span>Товар добавлен в корзину!</span>
+                <button><img alt="close"></button>
+            </div>
+            <div class="main-add-down">
+                <button class="active">
+                    ОФОРМИТЬ ЗАКАЗ
+                </button>
+                <button>
+                    ПРОДОЛЖИТЬ ПОКУПКИ
+                </button>
+            </div>
+        </section>
         <footer>
             <section class="up">
                 <nav class="footer-navigation">
