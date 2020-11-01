@@ -1,0 +1,36 @@
+.main-suggestions-list .yellow{
+    background-color: rgb(255, 191, 71);
+}
+.main-suggestions-list .blue{
+    background-color: rgb(59, 188, 227);
+}
+.main-suggestions-list .pink{
+    background-color: rgb(220, 145, 216);
+}
+.main-suggestions-list .green{
+    background-color: rgb(142, 215, 143);
+}
+.main-suggestions-list .orange{
+    background-color: rgb(255, 192, 71);
+}
+.footer-services div{
+    position: relative;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #212a3a;
+}
+.footer-services .vk-icon{
+   margin: 13px;
+   margin-left: 8px;
+   margin-right: 7px; 
+}
+.footer-services .fb-icon{
+    margin: 14px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.footer-services .inst-icon{
+    margin: 10px;
+    margin-left: 9px;
+}
