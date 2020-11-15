@@ -3,32 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Техномарт</title>
     </head>
     <body>
         <header class="main-header">
-            <h1>Заголовок</h1>
-            <a href="" class="main-header-logo">
-                    <img src="img/main-logo.jpg" alt="Logo">
-                    Техномарт
-            </a>
-            <div class="main-search" aria-label="search">
-                <img src="img/icon-search.svg" alt="search">
-                <label for="header-search">Поиск:</label>
-                <input id="header-search" type="text" name="search">
+            <h1 class="visually-hidden">Заголовок</h1>
+            <div class="header-top">
+                <a href="">
+                    <div class="main-header-logo">
+                        Техномарт
+                    </div>
+                </a>
+                <div class="main-search" aria-label="search">
+                    <img src="img/icon-search.svg" alt="search">
+                    <input id="header-search" type="text" name="search" placeholder="Поиск:">
+                </div>
+                <a href="" class="main-header-search">  
+                    <img src="img/icon-bookmark.svg" alt="bookmarks">
+                    <span>Закладки: 0</span>
+                </a>
+                <a href="" class="main-header-cart">  
+                    <img src="img/cart-icon.svg" alt="search">
+                    <span>Корзина: 0</span>
+                </a>
+                <a href="" class="main-header-buy">
+                    <span>Оформить заказ</span>
+                </a>
             </div>
-            <a href="" class="main-header-search">  
-                <img src="img/icon-bookmark.svg" alt="bookmarks">
-                <span>Закладки: 0</span>
-            </a>
-            <a href="" class="main-header-cart">  
-                <img src="img/cart-icon.svg" alt="search">
-                <span>Корзина: 0</span>
-            </a>
-            <a href="" class="main-header-buy">
-                <span>Оформить заказ</span>
-            </a>
             <p class="main-slogan">
                 Интернет-магазин<br>
                 строительных материалов<br>
@@ -172,7 +176,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="main-fabricatosr">
+            <section class="main-brands">
                 <h2 class="main-popular-subtitle">Популярные производители:</h2>
                 <a class="main-popular-catalog">Все производители</a>
                 <ul class="main-fabricators-list">
@@ -336,7 +340,7 @@
                 <img src="img/map-popup.jpg" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
             </section>
         <footer>
-            <div class="up">
+            <div class="footer-top">
                 <nav class="footer-navigation">
                     <a href="" class="main-header-logo">
                             <img src="img/main-logo.jpg" alt="Logo">
@@ -361,7 +365,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="down">
+            <div class="footer-botton">
                 <p>
                     C 2010-2017 Компания "Техномарт"<br>
                     Все права защищены
@@ -369,19 +373,13 @@
                 <ul class="footer-services">
                     <h3>Соцсети</h3>
                     <li>
-                        <div aria-label="Вконтакте">
                             <img class="vk-icon" src="img/vk-icon.svg" alt="VK">
-                        </div>
                     </li>
                     <li>
-                        <div aria-label="FaceBook">  
                             <img class="fb-icon" src="img/fb-icon.svg" alt="FaceBook">
-                        </div>
                     </li>
                     <li>
-                        <div aria-label="Instagram">
                             <img class="inst-icon" src="img/insta-icon.svg" alt="Instagram">
-                        </div>
                     </li>
                 </ul>
                 <p>

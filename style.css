@@ -1,39 +1,119 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+
+	background-color: #f1f5f7;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.header-top {
+	color: white;
+	background-color: #293449;
+}
+
+.header-top a{
+	color: inherit;
+}
+.Layer_90_copy_2 {
+	background-image: url("Layer 90 copy 2.png");
+	position: absolute;
+	left: 170px;
+	top: -4px;
+	width: 220px;
+	height: 51px;
+	z-index: 446;
+  }
+  
+.main-header-logo {
+	padding: 12px;
+
+	width: 220px;
+
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	box-shadow: 0px -5px 0px 0px #b52933 inset;
+
+	box-shadow: 0px -5px 0px 0px #b52933 inset;
+	background-color: #ee3643;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+	background-color: #ca2c37;
+	box-shadow: 0px -5px 0px 0px #9a212a inset;
+}
+
+.main-header-logo:active {
+	background-color: #ba2732;
+	box-shadow: 0px -5px 0px 0px #8e1e26 inset;
+}
+
+.main-search{
+	width: 270px;
+	height: 47px;
+}
+
+.main-search img {
+	opacity: 30%;
+}
+
+.main-search:hover img {
+	opacity: 100%;
+}
+
+.main-search input {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	color: white;
+
+	outline: none;
+	border: none;
+	background: 0px;
+}
+
+.main-search input::-webkit-input-placeholder {
+	color: white;
+}
+
+#header-search:focus{
+	background-color: white;
+	color: black;
+}
+
+.main-search:hover{
+	background-color: #212a3a;
+}
+
 .main-suggestions-list .yellow{
     background-color: rgb(255, 191, 71);
 }
+
 .main-suggestions-list .blue{
     background-color: rgb(59, 188, 227);
 }
+
 .main-suggestions-list .pink{
     background-color: rgb(220, 145, 216);
 }
+
 .main-suggestions-list .green{
     background-color: rgb(142, 215, 143);
 }
+
 .main-suggestions-list .orange{
     background-color: rgb(255, 192, 71);
 }
-.footer-services div{
-    position: relative;
-    border-radius: 30px;
-    width: 40px;
-    height: 40px;
-    background-color: #212a3a;
-}
-.footer-services .vk-icon{
-   margin: 13px;
-   margin-left: 8px;
-   margin-right: 7px; 
-}
-.footer-services .fb-icon{
-    margin: 14px;
-    margin-top: 10px;
-    margin-bottom: 9px;
-}
-.footer-services .inst-icon{
-    margin: 10px;
-    margin-left: 9px;
-}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
