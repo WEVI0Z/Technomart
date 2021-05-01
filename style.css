@@ -4,7 +4,7 @@ body{
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 18px;
 
 	background-color: #f1f5f7;
 }
@@ -22,38 +22,28 @@ a{
 .header-top a{
 	color: inherit;
 }
-.Layer_90_copy_2 {
-	background-image: url("Layer 90 copy 2.png");
-	position: absolute;
-	left: 170px;
-	top: -4px;
-	width: 220px;
-	height: 51px;
-	z-index: 446;
-  }
   
-.main-header-logo {
+.logo {
 	padding: 12px;
-
-	width: 220px;
+	padding-left: 55px;
+	padding-right: 55px;
 
 	font-size: 24px;
-	line-height: 24px;
+	line-height: 47px;
 	text-transform: uppercase;
 	text-align: center;
 	box-shadow: 0px -5px 0px 0px #b52933 inset;
 
-	box-shadow: 0px -5px 0px 0px #b52933 inset;
 	background-color: #ee3643;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+.logo:hover,
+.logo:focus {
 	background-color: #ca2c37;
 	box-shadow: 0px -5px 0px 0px #9a212a inset;
 }
 
-.main-header-logo:active {
+.logo:active {
 	background-color: #ba2732;
 	box-shadow: 0px -5px 0px 0px #8e1e26 inset;
 }
@@ -92,6 +82,17 @@ a{
 
 .main-search:hover{
 	background-color: #212a3a;
+}
+
+.main-header-buy{
+	background-color: rgb(99,166, 62);
+}
+
+.main-header h1{
+	font-size: 16px;
+	color: rgb(238, 54, 67);
+	font-style: italic;
+	text-align: left;
 }
 
 .main-suggestions-list .yellow{
