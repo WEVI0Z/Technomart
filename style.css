@@ -62,8 +62,11 @@ a{
 }
 
 .main-search input {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 17px;
+	width: 270px;
+	height: 42px;
+
+	font-family: inherit;
+	font-size: inherit;
 	color: white;
 
 	outline: none;
@@ -76,11 +79,26 @@ a{
 }
 
 #header-search:focus{
-	background-color: white;
+	font-size: 17px;
 	color: black;
+
+	background-color: white;
 }
 
 .main-search:hover{
+	background-color: #212a3a;
+}
+
+.header-button{
+	width: 150px;
+	height: 42px;
+
+	text-align: center;
+	line-height: 18px;
+}
+
+.header-button:focus,
+.header-button:hover{
 	background-color: #212a3a;
 }
 
@@ -93,6 +111,10 @@ a{
 	color: rgb(238, 54, 67);
 	font-style: italic;
 	text-align: left;
+}
+
+.main-header-contacts{
+	list-style-type: none;
 }
 
 .main-suggestions-list .yellow{
