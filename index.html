@@ -279,17 +279,19 @@
                     Хороший интернет-магазин отличается от плохого не только ценами!
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
                 </p>
-                <ul class="main-services-list-suggestions">
-                    <li class="main-services-list-item main-services-list-item-active">
-                        <button>Доставка</button>
-                    </li>
-                    <li class="main-services-list-item">
-                        <button>Гарантия</button>
-                    </li>
-                    <li class="main-services-list-item">
-                        <button>Кредит</button>
-                    </li>
-                </ul>
+                <div class="shadow-wrap">
+                    <ul class="main-services-list-suggestions">
+                        <li class="main-services-list-item main-services-list-item-active">
+                            <button>Доставка</button>
+                        </li>
+                        <li class="main-services-list-item">
+                            <button>Гарантия</button>
+                        </li>
+                        <li class="main-services-list-item">
+                            <button>Кредит</button>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="main-services-list-description">
                     <li>
                         <h3>Доставка</h3>
@@ -317,11 +319,11 @@
                 </ul>
             </section>
             <section class="main-description">
-                <h2 class="main-description-subtitle">Компания "Техномарт"</h2>
-                <p class="main-description-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+                <h2>Компания "Техномарт"</h2>
+                <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
                     строительства не оставит равнодушным любителей сэкономить на гастарбайтерах
                 </p>
-                <p class="main-description-info">
+                <p>
                     Мы можем доставть ваш товар в самые отдаленные точки России!
                     Техномарт работает со многими транспортными компаниями
                 </p>
@@ -330,16 +332,24 @@
                     <li class="main-description-list-item">Автотрейдинг</li>
                     <li class="main-description-list-item">ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="#" class="main-button">Подробнее о компаниях</a>
+                <a href="#" class="red-button">
+                    <div>
+                        Подробнее о компаниях
+                    </div>
+                </a>
             </section>
             <section class="main-contacts">
-                <h2 class="main-contacts-subtitle">Контакты</h2>
-                <p class="main-contacts-info">
+                <h2>Контакты</h2>
+                <p>
                     Вы можете забрать товар сами,
                     заехав в наш офис:
                 </p>
                 <img src="img/info-map.png" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
-                <a href="#"  class="main-button">Заблудились? Напишите нам</a>
+                <a href="#" class="red-button">
+                    <div>
+                        Заблудились? Напишите нам
+                    </div>
+                </a>
             </section>
         </main>
         <footer>
@@ -348,7 +358,7 @@
                     Техномарт
                 </a>
                 <p>
-                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                     <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </p>
                 <nav class="footer-navigation">
@@ -369,7 +379,7 @@
             </div>
             <div class="footer-bottom">
                 <p>
-                    C 2010-2017 Компания "Техномарт"
+                    C 2010-2017 Компания "Техномарт"<br>
                     Все права защищены
                 </p>
                 <h3>Соцсети</h3>
@@ -385,48 +395,47 @@
                     </li>
                 </ul>
                 <p class="footer-connection">
-                    <span>Обратная связь:</span>
+                    <span>Обратная связь:</span><br>
                     <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
                 <p class="footer-connection">
-                    <span>Разработано -</span>
+                    <span>Разработано -</span><br>
                     <a href="htmlacademy.ru">htmlacademy.ru</a>
                 </p>
             </div>
         </footer>
         <section class="write-us-form">
-            <h2>Напишите нам</h2>
-            <button>
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <button class="close-button">
                 Закрыть
             </button>
             <form class="help-form" method="post" action="htttps://echo.htmlacademy.ru">
-                <h3>Напишите нам</h3>
-                <ul>
+                <ul class="write-us-list">
                     <li>
                         <label>
-                            Ваше имя:
+                            Ваше имя:<br>
                             <input type="text" name="name" placeholder="Имя Фамилия">
                         </label>
                     </li>
                     <li>
                         <label>
-                            Ваш e-mail:
+                            Ваш e-mail:<br>
                             <input type="email" name="e-mail" placeholder="email@example.com">
                         </label>
                     </li>
                     <li>
                         <label>
-                            Текст письма:
+                            Текст письма:<br>
                             <input type="text" name="letter-text" placeholder="В свободной форме">
                         </label>
                     </li>
                 </ul>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="write-us-button">Отправить</button>
             </form>
         </section>
         <section class="map-popup">
-            <h2>Карта</h2>
-            <button>
+            <h2 class="visually-hidden">Карта</h2>
+            <button class="close-button">
                 Закрыть
             </button>
             <a href="#"><img src="img/map-popup.jpg" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8"></a>
