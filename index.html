@@ -29,7 +29,9 @@
                     </div>
                 </a>
                 <a href="#" class="main-header-buy">
-                    Оформить заказ
+                    <div>
+                        Оформить заказ
+                    </div>
                 </a>
             </div>
             <h1>
@@ -45,43 +47,57 @@
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                 </li>
             </ul>
-            <div class="authorizated-user">
-                <div class="user">
-                    <a href="#">Равшан Джамшутович</a>
-                    <a href="#">Выйти</a>
-                </div>
-                <div>
-                    <a href="#">Мои заказы</a>
-                    <a href="#">Личный ккабинет</a>
-                </div>
-            </div>
             <div class="authorization">
                 <a href="#">Войти</a>
                 <a href="#">Регистрация</a>
             </div>
+            <div class="authorizated-user">
+                <div class="user">
+                    <a href="#">Равшан Джамшутович</a>
+                    <a href="#" class="exit">Выйти</a>
+                </div>
+                <div class="interaction">
+                    <a href="#">Мои заказы</a>
+                    <a href="#">Личный кабинет</a>
+                </div>
+            </div>
             <nav class="main-navigation">
                 <ul class="main-navigation-site">
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Компания</a>
-                    </li>
-                    <li>
-                        <a href="catalog.html">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Новости</a>
-                    </li>
-                    <li>
-                        <a href="#">Спецпредложения</a>
-                    </li>
-                    <li>
-                        <a href="#">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
+                    <a href="#">
+                        <li>
+                            Главная
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Компания
+                        </li>
+                    </a>
+                    <a href="catalog.html">
+                        <li>
+                            Каталог
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Новости
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Спецпредложения
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Доставка
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Контакты
+                        </li>
+                    </a>
                 </ul>
             </nav>
         </header>
@@ -90,94 +106,130 @@
                 <h2 class="hidden">Предложения</h2>
                 <ul class="main-suggestions-list">
                     <li class="yellow">
-                        <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                        <div class="flag flag-new"><span>new</span></div>
                         <h3>Материалы</h3>
-                        <a href="#">На любой вкус</a>
+                        <a href="#">
+                            <div class="main-suggestions-button">
+                                    На любой вкус
+                            </div>
+                        </a>
                     </li>
                     <li class="blue">
                         <h3>Инструмент</h3>
-                        <a href="#">На все случаи</a>
+                        <a href="#">
+                            <div class="main-suggestions-button">
+                                На все случаи    
+                            </div>
+                        </a>
                     </li>
                     <li class="pink">
                         <h3>Техника</h3>
-                        <a href="#">Для стройки</a>
+                        <a href="#">
+                            <div class="main-suggestions-button">
+                                Для стройки
+                            </div>
+                        </a>
                     </li>
                     <li class="green">
                         <h3>Скидки 50%</h3>
-                        <a href="#">На 350 товаров</a>
+                        <a href="#">
+                            <div class="main-suggestions-button">
+                                На 350 товаров
+                            </div>
+                        </a>
                     </li>
                     <li class="orange">
                         <h3>Доставка</h3>
-                        <a href="#">Бесплатно</a>
+                        <a href="#">
+                            <div class="main-suggestions-button">
+                                Бесплатно
+                            </div>
+                        </a>
                     </li>
                 </ul>
                 <div class="main-suggestions-slider">
                     <ul>
-                        <li>
+                        <li class="slider-item">
                             <h3>Дрели</h3>
                             <p>Соседям на радость!</p>
-                            <a href="catalog.html">Открыть каталог</a>
+                            <a href="catalog.html" class="red-button">
+                                <div>
+                                    Открыть каталог
+                                </div>
+                            </a>
                         </li>
-                        <li>
+                        <li class="slider-item">
                             <h3>Перфораторы</h3>
                             <p>Настоящие мужские игрушки</p>
-                            <a href="#">Открыть каталог</a>
+                            <a href="#" class="red-button">
+                                <div>
+                                    Открыть каталог
+                                </div>
+                            </a>
                         </li>
                     </ul>
-                    <button class="main-suggestions-slider-previous">Предыдущий</button>
-                    <button class="main-suggestions-slider-next">Следдующий</button>
+                    <button class="slider-small-button previous">Предыдущий</button>
+                    <button class="slider-small-button next">Следдующий</button>
                 </div>
             </section>
             <section class="main-popular">
                 <h2>Популярные товары:</h2>
-                <a href="catalog.html">Все популярные товары</a>
+                <a href="catalog.html" class="red-button">
+                    <div>
+                        Все популярные товары
+                    </div>
+                </a>
                 <ul class="main-popular-list">
                     <li class="main-popular-list-item">
                         <div class="action-choice">
-                            <a href="#">Купить</a>
-                            <a href="#">В закладки</a>
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="bookmark">В закладки</a>
                         </div>
                         <img src="img/item-1.jpg" width="220" height="159" alt="Перфоратор BOSCH BFG 9000">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <span class="discount">32500</span>
-                        <a href="#"><span>25500</span></a>
+                        <a href="#" class="item-price"><span>25500</span></a>
                     </li>
                     <li class="main-popular-list-item">
                         <div class="action-choice">
-                            <a href="#">Купить</a>
-                            <a href="#">В закладки</a>
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="bookmark">В закладки</a>
                         </div>
                         <img src="img/item-2.jpg" width="220" height="159" alt="Перфоратор BOSCH BFG 3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <span class="discount">22500</span>
-                        <a href="#"><span>15500</span></a>
+                        <a href="#" class="item-price"><span>15500</span></a>
                     </li>
                     <li class="main-popular-list-item">
                         <div class="action-choice">
-                            <a href="#">Купить</a>
-                            <a href="#">В закладки</a>
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="bookmark">В закладки</a>
                         </div>
                         <img src="img/item-3.jpg" width="220" height="159" alt="Перфоратор BOSCH BFG 6000">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <span class="discount">30500</span>
-                        <a href="#"><span>25500</span></a>
+                        <a href="#" class="item-price"><span>25500</span></a>
                     </li>
                     <li class="main-popular-list-item">
-                        <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                        <div class="flag flag-new"><span>new</span></div>
                         <div class="action-choice">
-                            <a href="#">Купить</a>
-                            <a href="#">В закладки</a>
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="bookmark">В закладки</a>
                         </div>
                         <img src="img/item-4.jpg" width="220" height="159" alt="Перфоратор BOSCH BFG 2000">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <span class="discount"></span>
-                        <a href="#"><span>25500</span></a>
+                        <a href="#" class="item-price"><span>25500</span></a>
                     </li>
                 </ul>
             </section>
             <section class="main-brands">
-                <h2 class="main-popular-subtitle">Популярные производители:</h2>
-                <a href="#"  class="main-popular-catalog">Все производители</a>
+                <h2>Популярные производители:</h2>
+                <a href="#"  class="red-button">
+                    <div>
+                        Все производители
+                    </div>
+                </a>
                 <ul class="main-fabricators-list">
                     <li>
                         <a href="#">

@@ -102,8 +102,26 @@ a{
 	background-color: #212a3a;
 }
 
-.main-header-buy{
+.header-button:active {
+	background-color: rgb(22, 29, 41);
+}
+
+.main-header-buy div{
+	width: 150px;
+	height: 42px;
+
+	text-align: center;
+
 	background-color: rgb(99,166, 62);
+}
+
+.main-header-buy div:hover,
+.main-header-buy div:focus {
+	background-color: rgb(95, 187, 45);
+}
+
+.main-header-buy div:active{
+	background-color: rgb(81, 133, 52);
 }
 
 .main-header h1{
@@ -114,7 +132,143 @@ a{
 }
 
 .main-header-contacts{
+	text-align: center;
 	list-style-type: none;
+}
+  
+
+.main-header-contacts .phonenumber{
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.phonenumber a{
+	color: rgb(238, 54, 67);
+}
+
+.main-header-contacts .address{
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.authorization{
+	font-size: 21px;
+	line-height: 21px;
+	text-align: right;
+}
+
+.authorization a:hover,
+.authorization a:focus{
+	color: #ee3643;
+}
+
+.authorization a:active{
+	color: rgba(0, 0, 0, 30%);
+}
+
+.authorizated-user .user{
+	text-align: right;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.user .exit{
+	color: rgb(197, 197, 197);
+}
+
+.user .exit:hover,
+.user .exit:focus{
+	color: rgb(50, 66, 92);
+}
+
+.user a:active,
+.user .exit:active {
+	color: rgba(0, 0, 0, 30%);
+}
+
+.authorizated-user .interaction{
+	text-align: right;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.interaction a{
+	color: #32425c;
+}
+
+.interaction a:hover,
+.interaction a:focus{
+	color: #ee3643;
+}
+
+.interaction a:active{
+	color: rgba(50, 66, 92, 30%)
+}
+
+.main-navigation-site{
+	background-color: rgb(50, 66, 92);
+	list-style-type: none;
+}
+
+.main-navigation-site li{
+	height: 42px;
+}
+
+.main-navigation-site li:hover,
+.main-navigation-site li:focus{
+	background-color: rgb(41, 52, 73);
+}
+
+.main-navigation-site a:active{
+	color: rgba(255, 255, 255, 50%);
+
+	background-color: rgb(41, 52, 73);
+}
+
+.main-navigation-site a{
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+}
+
+.main-suggestions-list{
+	list-style-type: none;
+}
+
+.main-suggestions-list li{
+	color:#fff;
+	font-size: 24px;
+}
+
+.flag-new{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+
+	background-color:rgb(238, 54, 67);
+}
+
+.main-suggestions-button{
+	width: 135px;
+	height: 38px;
+
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	background-color: rgba(255, 255, 255, 10%);
+	border-radius: 5px;
+}
+
+.main-suggestions-button:hover,
+.main-suggestions-button:focus{
+	background-color: rgba(255, 255, 255, 20%);
+}
+
+.main-suggestions-button:active{
+	background-color: rgba(255, 255, 255, 30%);
 }
 
 .main-suggestions-list .yellow{
@@ -136,6 +290,94 @@ a{
 .main-suggestions-list .orange{
     background-color: rgb(255, 192, 71);
 }
+
+.main-suggestions-slider ul{
+	color: #fff;
+
+	background-color: #000;
+	list-style-type: none;
+}
+
+.red-button div{
+	height: 38px;
+
+	text-align: center;
+	color: #fff;
+
+	background-color: rgb(238, 54, 67);
+}
+
+.red-button div:hover,
+.red-button div:focus{
+	background-color: rgb(202, 44, 55);
+}
+
+.red-button div:active{
+	background-color: rgb(186, 39, 50);
+}
+
+.slider-item h3{
+	font-size: 36px;
+}
+
+.slider-item p{
+	font-size: 18px;
+}
+
+.slider-small-button{
+	border: none;
+}
+
+.main-popular h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.main-popular-list-item h3{
+	font-size: 18px;
+}
+
+.main-popular-list-item span{
+	font-size: 17px;
+}
+
+.main-services-list-item:hover{
+	box-shadow: 0 0 5px;
+}
+
+.item-price{
+	color: #fff;
+
+	background-color: rgb(238, 54, 67);
+}
+
+.discount{
+	text-decoration: line-through;
+	color: #a9a9a9;
+}
+
+.main-brands h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.main-fabricators-list{
+	list-style-type: none;
+}
+
+.main-services h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.main-services-description{
+	font-size: 13px;
+	line-height: 24px;
+}
+
 
 .visually-hidden {
 	position: absolute !important;
