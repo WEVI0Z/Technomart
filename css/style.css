@@ -9,6 +9,10 @@ body{
 	background-color: #f1f5f7;
 }
 
+.white{
+	background-color: #fff;
+}
+
 a{
 	text-decoration: none;
 	color:black;
@@ -631,6 +635,127 @@ a{
 	-moz-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 	box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 
+}
+
+.site-navigation{
+	text-transform: uppercase;
+	font-size: 13px;
+
+	list-style-type: none;
+}
+
+.main-catalog h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+
+	background-color: #f2f6f8;
+}
+
+.catalog-filter {
+	text-transform: uppercase;
+}
+
+.catalog-filter p{
+	font-size: 13px;
+
+	background-color: #f7f3ec;
+}
+
+.filter-price div{
+	background-color: #f7f3ec;
+}
+
+.grey{
+	background-color: #f2f6f8;
+}
+
+.main-catalog fieldset{
+	border: none;
+}
+
+.catalog-filter ul{
+	font-size: 15px;
+
+	list-style-type: none;
+}
+
+.catalog-filter button{
+	font-family: inherit;
+	text-transform: uppercase;
+
+	border: solid;
+	border-width: 1px;
+	border-color: #e5e5e5;
+	background-color: rgba(0, 0, 0, 0%);
+	border-radius: 3px;
+}
+
+.catalog-filter button:hover,
+.catalog-filter button:focus{
+	border-color: #bdc6ca;
+}
+
+.catalog-filter button:active{
+	border-color: #ee3643;
+}
+
+.main-catalog-sort h2{
+	font-size: 13px;
+	color: #000;
+	
+	background-color: #f7f3ec;
+}
+
+.main-catalog-sort{
+	text-transform: uppercase;
+	font-size: 13px;
+
+	background-color: #f7f3ec;
+}
+
+.main-catalog-sort ul{
+	list-style-type: none;
+}
+
+.main-catalog-sort-method-item a{
+	text-decoration: underline;
+
+	opacity: 30%;
+}
+
+.main-catalog-sort-method-item a:hover,
+.main-catalog-sort-method-item a:focus{
+	color: #000;
+	text-decoration: underline;
+	text-decoration-color: #ee3643;
+
+	opacity: 100%;
+}
+
+.active a{
+	color: #ee3643;
+	opacity: 100%;
+	text-decoration: none;
+}
+
+.main-pagination-list li{
+	text-transform: uppercase;
+
+	border: solid;
+	border-width: 1px;
+	border-color: #e5e5e5;
+	background-color: rgba(0, 0, 0, 0%);
+	border-radius: 3px;
+}
+
+.main-pagination-list li:hover{
+	border-color: #bdc6ca;
+}
+
+.main-pagination-list .pagination-item-current{
+	background-color: #ee3643;
+	border: none;
 }
 
 .visually-hidden {
