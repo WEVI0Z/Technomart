@@ -9,6 +9,14 @@ body{
 	background-color: #f1f5f7;
 }
 
+.container{
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	width: 940px;
+}
+
 .white{
 	background-color: #fff;
 }
@@ -19,7 +27,16 @@ a{
 }
 
 .header-top {
+	display: flex;
+	justify-content: center;
+
 	color: white;
+	background-color: #293449;
+}
+
+.header-bg{
+	width: 100%;
+
 	background-color: #293449;
 }
 
@@ -28,9 +45,12 @@ a{
 }
   
 .logo {
-	padding: 12px;
-	padding-left: 55px;
-	padding-right: 55px;
+	/* /* padding: 12px; */
+	/* padding-left: 55px;
+	padding-right: 55px; */
+	padding: 0 auto;
+
+	width: 220px;
 
 	font-size: 24px;
 	line-height: 47px;
@@ -54,7 +74,8 @@ a{
 
 .main-search{
 	width: 270px;
-	height: 47px;
+	padding-left: 49px;
+	padding-top: 14px;
 }
 
 .main-search img {
@@ -67,7 +88,6 @@ a{
 
 .main-search input {
 	width: 270px;
-	height: 42px;
 
 	font-family: inherit;
 	font-size: inherit;
@@ -94,9 +114,10 @@ a{
 }
 
 .header-button{
+	display: block;
+	padding-top: 14px;
 	width: 150px;
-	height: 42px;
-
+	
 	text-align: center;
 	line-height: 18px;
 }
@@ -110,21 +131,21 @@ a{
 	background-color: rgb(22, 29, 41);
 }
 
-.main-header-buy div{
+.main-header-buy{
 	width: 150px;
-	height: 42px;
+	padding-top: 14px;
 
 	text-align: center;
 
 	background-color: rgb(99,166, 62);
 }
 
-.main-header-buy div:hover,
-.main-header-buy div:focus {
+.main-header-buy:hover,
+.main-header-buy:focus {
 	background-color: rgb(95, 187, 45);
 }
 
-.main-header-buy div:active{
+.main-header-buy:active{
 	background-color: rgb(81, 133, 52);
 }
 
