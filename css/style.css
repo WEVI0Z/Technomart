@@ -471,19 +471,17 @@ a{
 
 	color: #fff;
 
-	/* background-color: #000;
-	background-image: url(img/slider-1.jpg); */
 	list-style-type: none;
 }
 
 .main-suggestions-slider li{
 	margin-top: auto;
-
+	width: 620px;
+	min-height: 266px;
+	
+	outline: 1px solid white;
 	background-color: #000;
-	background-image: url(img/slider-1.jpg); /* Путь к фоновому рисунку */
-    background-position: left bottom; /* Положение фона */
-    background-repeat: repeat-x;
-
+	background-image: url(img/slider-1.jpg);
 }
 
 .red-button{
