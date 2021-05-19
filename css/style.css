@@ -990,11 +990,21 @@ a{
 }
 
 .up ul{
+	display: flex;
+
 	list-style-type: none;
 }
 
 .gold a{
 	color: #ffd180;
+}
+/* 
+.gold a:nth-child(1){
+	color: #fff;
+} */
+
+.gold p{
+
 }
 
 .up a:hover,
