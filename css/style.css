@@ -35,8 +35,6 @@ a{
 }
 
 .header-bg{
-	width: 100%;
-
 	background-color: #293449;
 }
 
@@ -49,7 +47,6 @@ a{
 	/* padding-left: 55px;
 	padding-right: 55px; */
 	padding: 0 auto;
-
 	width: 220px;
 
 	font-size: 24px;
@@ -990,7 +987,9 @@ a{
 }
 
 .up ul{
+	padding: 0;
 	display: flex;
+	align-items: flex-end;
 
 	list-style-type: none;
 }
