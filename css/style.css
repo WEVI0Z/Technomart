@@ -35,8 +35,6 @@ a{
 }
 
 .header-bg{
-	width: 100%;
-
 	background-color: #293449;
 }
 
@@ -46,8 +44,11 @@ a{
   
 .logo {
 	padding: 0 auto;
+<<<<<<< HEAD
 	height: 47px;
 
+=======
+>>>>>>> 548cf46364a0463ebc6eafb3aff7a15175fc7cd0
 	width: 220px;
 
 	font-size: 24px;
@@ -963,9 +964,14 @@ a{
 }
 
 .up ul{
+	padding: 0;
 	display: flex;
+<<<<<<< HEAD
 	align-items: center;
 	min-height: 47px;
+=======
+	align-items: flex-end;
+>>>>>>> 548cf46364a0463ebc6eafb3aff7a15175fc7cd0
 
 	list-style-type: none;
 }
