@@ -1103,87 +1103,12 @@ a{
 	background-color: #212a3a;
 }
 
-/* 
-.up{
-	font-size: 18px;
-	color: #fff;
-
-	background-color: #32425c;
-}
-
-.up a{
-	color: #fff;
-}
-
-.up ul{
-	padding: 0;
-	display: flex;
-
-	list-style-type: none;
-}
-
-.gold li{
-	color: #ffd180;
-}
-
-.footer-navigation-list .footer-phonenumber{
-	color: #fff;
-}
-
-.up a:hover,
-.up a:focus{
-	text-decoration: underline;
-}
-
-.up a:active{
-	opacity: 50%;
-	text-decoration: none;
-}
-
-.footer-bottom{
-	color: #fff;
-
-	background-color: #293449;
-}
-
-.footer-bottom a{
-	color:#ffd180;
-}
-
-.footer-bottom a:hover,
-.footer-bottom a:focus{
-	text-decoration: underline;
-}
-
-.footer-bottom a:active{
-	color: #ee3643;
-	text-decoration: none;
-}
-
-.footer-services{
-	list-style-type: none;
-}
-
-.footer-services li{
-	width: 41px;
-	height: 41px;
-
-	text-align: center;
-
-	border: solid;
-	border-color: rgba(0, 0, 0, 0%);
-	border-radius: 50%;
-	background-color: #212a3a;
-}
-
-.footer-services li:hover,
-.footer-services li:focus,
-.footer-services li:active{
-	background-color: #ee3643;
-} */
-
 .write-us-form{
 	width: 620px;
+	min-height: 430px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
 
 	border-top: solid;
 	border-width: 7px;
@@ -1193,11 +1118,27 @@ a{
 	box-shadow: 0px 24px 30px 15px rgba(34, 60, 80, 0.2);
 }
 
+.write-us-form form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .close-button{
+	padding: 9px 9px 0 0;
+	align-self: flex-end;
+
+	background-color: inherit;
+	color: #ee3643;
 	border: none;
 }
 
 .write-us-list{
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	font-size: 18px;
 	line-height: 18px;
 
@@ -1205,12 +1146,24 @@ a{
 }
 
 .write-us-list input{
+	width: 216px;
+	min-height: 34px;
+
 	font-family: inherit;
 	font-size: 13px;
 
 	border: solid;
 	border-radius: 2px;
 	border-color: #dee3e4;
+}
+
+.write-us-list-item:first-child{
+	margin-right: 20px;
+}
+
+.write-us-list-item:last-child input{
+	width: 456px;
+	min-height: 110px;
 }
 
 .write-us-button{
