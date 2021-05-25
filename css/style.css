@@ -1120,8 +1120,10 @@ a{
 
 .write-us-form form{
 	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .close-button{
@@ -1135,6 +1137,7 @@ a{
 
 .write-us-list{
 	margin: 0;
+	margin-top: 18px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1148,6 +1151,7 @@ a{
 .write-us-list input{
 	width: 216px;
 	min-height: 34px;
+	margin-top: 13px;
 
 	font-family: inherit;
 	font-size: 13px;
@@ -1161,15 +1165,28 @@ a{
 	margin-right: 20px;
 }
 
+.write-us-list-item:last-child{
+	margin-top: 22px;
+}
+
 .write-us-list-item:last-child input{
 	width: 456px;
 	min-height: 110px;
 }
 
+.write-us-button-wrap{
+	min-height: 112px;
+	width: 100%;
+
+	background-color: #f4f4f4;
+}
+
 .write-us-button{
-	background-color: #ee3643;
-	border-color: rgba(0, 0, 0, 0%);
-	border-radius: 3px;
+	width: 460px;
+	margin: 0 auto;
+	margin-top: 37px;
+
+	border-style: none;
 }
 
 .map-popup{
