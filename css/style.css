@@ -1394,6 +1394,7 @@ a{
 .catalog-filter button{
 	width: 138px;
 	min-height: 36px;
+	margin: 0 auto;
 
 	font-family: inherit;
 	text-transform: uppercase;
@@ -1426,10 +1427,18 @@ a{
 
 .main-catalog-sort ul{
 	display: flex;
+	margin: 0;
+	padding: 10px 0;
 }
 
 .main-catalog-sort h2{
+	margin: 0;
+	padding: 10px 0;
+	padding-left: 19px;
+	padding-right: 140px;
+	
 	font-size: 13px;
+	line-height: 18px;
 	color: #000;
 	
 	background-color: #f7f3ec;
