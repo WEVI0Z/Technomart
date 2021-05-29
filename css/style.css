@@ -329,7 +329,9 @@ a{
 }
 
 .main-navigation-site li{
-	padding: 19px 0;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
 
 	text-align: center;
 
@@ -337,8 +339,7 @@ a{
 }
 .main-navigation-site a {
 	padding: 19px 0;
-	padding-right: 33.5px;
-	padding-left: 34px;
+	flex-grow: 1;
 
 	font-size: 17px;
 	line-height: 17px;
@@ -356,7 +357,7 @@ a{
 }
 
 .main-navigation-site a:active{
-	color: rgba(97, 76, 76, 0.5);
+	color: rgba(256, 256, 256, 0.5);
 }
 
 .main-suggestions-list{
