@@ -29,6 +29,7 @@ a{
 .header-top {
 	display: flex;
 	justify-content: center;
+	/* flex-wrap: wrap; */
 
 	color: white;
 	background-color: #293449;
@@ -460,17 +461,17 @@ a{
 	font-size: 14px;
 	text-transform: uppercase;
 
-	background-color: rgba(255, 255, 255, 10%);
+	background-color: rgba(0, 0, 0, 10%);
 	border-radius: 5px;
 }
 
 .main-suggestions-button:hover,
 .main-suggestions-button:focus{
-	background-color: rgba(255, 255, 255, 20%);
+	background-color: rgba(0, 0, 0, 20%);
 }
 
 .main-suggestions-button:active{
-	background-color: rgba(255, 255, 255, 30%);
+	background-color: rgba(0, 0, 0, 30%);
 }
 
 .main-suggestions-list .yellow{
