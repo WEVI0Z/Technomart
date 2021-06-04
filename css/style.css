@@ -29,7 +29,7 @@ a{
 .header-top {
 	display: flex;
 	justify-content: center;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 
 	color: white;
 	background-color: #293449;
@@ -68,9 +68,10 @@ a{
 }
 
 .main-search{
-	width: 270px;
-	padding-left: 49px;
-	padding-top: 11px;
+	/* width: 250px; */
+	/* padding-left: 49px; */
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .main-search img {
@@ -82,8 +83,9 @@ a{
 }
 
 .main-search input {
-	width: 270px;
+	width: 250px;
 	box-sizing: border-box;
+	padding-left: 49px;
 
 	font-family: inherit;
 	font-size: inherit;
@@ -114,8 +116,9 @@ a{
 }
 
 .header-button{
-	padding-top: 11px;
-	width: 150px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	width: 160px;
 	
 	text-align: center;
 	line-height: 18px;
@@ -139,9 +142,12 @@ a{
 
 .main-header-buy{
 	width: 150px;
-	padding-top: 11px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 
 	text-align: center;
+	
+	line-height: 18px;
 
 	background-color: rgb(99,166, 62);
 }
