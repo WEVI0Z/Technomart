@@ -20,10 +20,14 @@
                         <input id="header-search" type="text" name="search" placeholder="Поиск:">  
                     </form>
                     <a href="#" class="bookmark header-button"> 
-                        Закладки: <span>0</span>
+                        <span class="bookmark-wrap">
+                            Закладки: <span>0</span>
+                        </span>
                     </a>
-                    <a href="#" class="cart header-button"> 
-                        Корзина: <span>0</span>
+                    <a href="#" class="cart header-button">
+                        <span class="cart-wrap">
+                            Корзина: <span>0</span>
+                        </span>
                     </a>
                     <a href="#" class="main-header-buy">
                         Оформить заказ
@@ -45,7 +49,9 @@
                     </li>
                 </ul>
                 <div class="authorization">
-                    <a href="#">Войти</a>
+                    <a href="#">
+                        <span>Войти</span>
+                    </a>
                     <a href="#">Регистрация</a>
                 </div>
                 <div class="authorizated-user" hidden>
@@ -128,26 +134,6 @@
                             </div>
                         </a>
                     </li>
-                    <li class="suggestions-list-combined">
-                        <ul class="combined-blocks">
-                            <li class="green">
-                                <h3>Скидки 50%</h3>
-                                <a href="#">
-                                    <div class="main-suggestions-button">
-                                        На 350 товаров
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="orange">
-                                <h3>Доставка</h3>
-                                <a href="#">
-                                    <div class="main-suggestions-button">
-                                        Бесплатно
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="main-suggestions-slider">
                         <ul>
                             <li class="slider-item">
@@ -169,8 +155,32 @@
                                 </a>
                             </li>
                         </ul>
-                        <button class="slider-small-button previous" hidden>Предыдущий</button>
-                        <button class="slider-small-button next" hidden>Следдующий</button>
+                        <button class="slider-small-button previous">
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="slider-small-button next">
+                            <span class="visually-hidden">Следдующий</span>
+                        </button>
+                    </li>
+                    <li class="suggestions-list-combined">
+                        <ul class="combined-blocks">
+                            <li class="green">
+                                <h3>Скидки 50%</h3>
+                                <a href="#">
+                                    <div class="main-suggestions-button">
+                                        На 350 товаров
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="orange">
+                                <h3>Доставка</h3>
+                                <a href="#">
+                                    <div class="main-suggestions-button">
+                                        Бесплатно
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -181,11 +191,11 @@
                 </div>
                 <ul class="main-popular-list">
                     <li class="main-popular-list-item">
-                        <div class="action-choice" hidden>
+                        <div class="action-choice">
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
-                        <img src="img/item-1.jpg" width="217.7" height="159" alt="Перфоратор BOSCH BFG 9000">
+                        <img src="img/item-1.jpg" width="218" height="159" alt="Перфоратор BOSCH BFG 9000">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <div class="item-price-and-discount">
                             <span class="discount">32500 P.</span>
@@ -197,7 +207,7 @@
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
-                        <img src="img/item-2.jpg" width="217.7" height="159" alt="Перфоратор BOSCH BFG 3000">
+                        <img src="img/item-2.jpg" width="218" height="159" alt="Перфоратор BOSCH BFG 3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <div class="item-price-and-discount">
                             <span class="discount">22500 P.</span>
@@ -209,7 +219,7 @@
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
-                        <img src="img/item-3.jpg" width="217.7" height="159" alt="Перфоратор BOSCH BFG 6000">
+                        <img src="img/item-3.jpg" width="218" height="159" alt="Перфоратор BOSCH BFG 6000">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <div class="item-price-and-discount">
                             <span class="discount">30500 P.</span>
@@ -222,7 +232,7 @@
                             <a href="#" class="buy">Купить</a>
                             <a href="#" class="bookmark">В закладки</a>
                         </div>
-                        <img src="img/item-4.jpg" width="217.7" height="159" alt="Перфоратор BOSCH BFG 2000">
+                        <img src="img/item-4.jpg" width="218" height="159" alt="Перфоратор BOSCH BFG 2000">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <div class="item-price-and-discount">
                             <span class="discount"></span>
