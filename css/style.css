@@ -881,9 +881,6 @@ a{
 	width: inherit;
 	min-height: 100%;
 	z-index: 22;
-	/* padding-top: 45px; */
-
-	/* background-color: white; */
 }
 
 .action-choice:hover {
@@ -992,6 +989,8 @@ a{
 }
 
 .main-services{
+	position: relative;
+
 	background-color: #f4f8f9;
 }
 
@@ -1021,11 +1020,23 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	min-height: 272px;
+	position: relative;
 
 	font-size: 21px;
 	line-height: 30px;
 
 	list-style-type: none;
+}
+
+
+.main-services-list-suggestions::after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 272px;
+	right: 0px;
+
+	background-image: url("../img/service-shadow.png");
 }
 
 .main-services-block{
@@ -1077,9 +1088,21 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	/* position: relative; */
 	width: 320px;
 	min-height: 272px;
 	padding: 0 10px;
+}
+
+.main-services-list-description li:nth-child(1)::after{
+	position: absolute;
+	content: "";
+	width: 486px;
+	height: 261px;
+	right: 10px;
+	top: 50%;
+
+	background-image: url("../img/delivery.png");
 }
 
 .main-services-list-description li:nth-child(2),
@@ -1139,6 +1162,7 @@ a{
 .main-description-list{
 	margin: 0;
 	margin-top: 30px;
+	padding-left: 36px;
 
 	line-height: 20px;
 
@@ -1147,8 +1171,13 @@ a{
 
 .main-description-list li{
 	padding: 7px 0;
+	position: relative;
 
 	font-size: 18px;
+}
+
+.main-description-list li::before{
+	content: "";
 }
 
 .main-description-list li:first-child{
