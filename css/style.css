@@ -808,7 +808,7 @@ a{
 	list-style-type: none;
 }
 
-.main-popular-list li{
+.main-popular-list-item{
 	position: relative;
 	margin-top: 20px;
 	margin-right: 20px;
@@ -818,6 +818,10 @@ a{
 	/* display: flex; */
 
 	border: 1px solid #e5e5e5;
+}
+
+.main-popular-list-item:hover .action-choice {
+	display: block;
 }
 
 .main-popular-list-item:first-child{
@@ -873,8 +877,7 @@ a{
 
 .action-choice{
 	position: absolute;
-	opacity: 0%;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: top;	
 	align-items: center;
@@ -885,7 +888,6 @@ a{
 
 .action-choice:hover {
 	display: flex;
-	opacity: 1;
 }
 
 .action-choice a{
