@@ -815,21 +815,12 @@ a{
 	width: 218px;
 	min-height: 318px;
 	z-index: 21;
-	/* display: flex; */
 
 	border: 1px solid #e5e5e5;
 }
 
 .main-popular-list-item:hover .action-choice {
 	display: block;
-}
-
-.main-popular-list-item:first-child{
-	margin-left: 0;
-}
-
-.main-popular-list-item:last-child{
-	margin-right: 0;
 }
 
 .main-popular-list-item h3{
