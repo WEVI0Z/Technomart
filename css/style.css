@@ -820,7 +820,7 @@ a{
 }
 
 .main-popular-list-item:hover .action-choice {
-	display: block;
+	display: flex;
 }
 
 .main-popular-list-item h3{
@@ -849,10 +849,32 @@ a{
 
 .item-price-and-discount a{
 	margin-bottom: 20px;
-	width: 141px;
+	position: relative;
+	align-self: start;
+	width: 122px;
+	margin-left: 42px;
 
 	font-size: 17px;
 	line-height: 18px;
+}
+
+.item-price-and-discount a::after{
+	content: "";
+	position: absolute;
+	right: -29.8px;
+	bottom: 0px;
+	
+	border: 15.7px solid transparent;
+	border-left: 15.7px solid #ee3643;
+}
+
+.item-price-and-discount a:hover::after,
+.item-price-and-discount a:focus::after{
+	border-left: 15.7px solid #ca2c37;
+}
+
+.item-price-and-discount a:active::after{
+	border-left: 15.7px solid #ba2732;
 }
 
 .main-popular-list-item:hover{
@@ -873,8 +895,10 @@ a{
 	justify-content: top;	
 	align-items: center;
 	width: inherit;
-	min-height: 100%;
+	min-height: 159px;
 	z-index: 22;
+
+	background-color: #fff;
 }
 
 .action-choice:hover {
@@ -1006,6 +1030,7 @@ a{
 
 	font-size: 13px;
 	line-height: 24px;
+	margin-bottom: 0;
 }
 
 .main-services-list-suggestions{
@@ -1071,7 +1096,7 @@ a{
 }
 
 .main-services-list-description{
-	margin-left: 70px;
+	margin-left: 80px;
 	padding: 0;
 
 	list-style-type: none;	
@@ -1080,11 +1105,9 @@ a{
 .main-services-list-description li{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	/* position: relative; */
-	width: 320px;
+	/* justify-content: center; */
+	width: 380px;
 	min-height: 272px;
-	padding: 0 10px;
 }
 
 .main-services-list-description li:nth-child(1)::after{
@@ -1093,13 +1116,35 @@ a{
 	width: 486px;
 	height: 261px;
 	right: 10px;
-	top: 50%;
+	bottom: 0px;
 
 	background-image: url("../img/delivery.png");
 }
 
-.main-services-list-description li:nth-child(2),
-.main-services-list-description li:nth-child(3){
+.main-services-list-description li:nth-child(2)::after{
+	position: absolute;
+	content: "";
+	width: 389px;
+	height: 283px;
+	right: 10px;
+	bottom: 0px;
+
+	background-image: url("../img/guarantee.png");
+}
+
+.main-services-list-description li:nth-child(3)::after{
+	position: absolute;
+	content: "";
+	width: 465px;
+	height: 285px;
+	right: 0px;
+	bottom: 0px;
+
+	background-image: url("../img/credit.png");
+}
+
+.main-services-list-description li:nth-child(1),
+.main-services-list-description li:nth-child(2){
 	display: none;
 }
 
