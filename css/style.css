@@ -1604,6 +1604,7 @@ a{
 	padding: 0;
 	margin: 0;
 	position: absolute;
+	z-index: 3;
 	top: 0;
 	right: 0;
 
@@ -1613,6 +1614,8 @@ a{
 .map-popup a{
 	margin: 0;
 	padding: 0;
+	position: absolute;
+	z-index: 2;
 }
 
 .site-navigation-list{
