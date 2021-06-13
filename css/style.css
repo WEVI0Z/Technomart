@@ -717,6 +717,7 @@ a{
 	text-transform: uppercase;
 
 	background-color: rgb(238, 54, 67);
+	border: none;
 	border-radius: 3px;
 }
 
@@ -1158,8 +1159,19 @@ a{
 }
 
 .main-services-list-description p{
+	margin-bottom: 0;
+
 	font-size: 13px;
 	line-height: 24px;
+}
+
+.main-services-list-description a{
+	margin-top: 31px;
+	padding: 10px 0;
+	width: 195px;
+
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .main-description-and-contacts-block{
@@ -1344,10 +1356,48 @@ a{
 .footer-services{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	width: 133px;
+	flex-wrap: wrap;
+	width: 164px;
 
 	list-style-type: none;
+}
+
+.footer-services li{
+	 position: relative;
+	 margin: 0 5px;
+}
+
+.vk-icon::after{
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 15px;
+	left: 8px;
+	top: 13px;
+
+	background-image: url("../img/vk-icon.svg");
+}
+
+.fb-icon::after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 22px;
+	left: 14px;
+	top: 10px;
+
+	background-image: url("../img/fb-icon.svg");
+}
+
+.inst-icon::after{
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	left: 10px;
+	top: 10px;
+
+	background-image: url("../img/insta-icon.svg");
 }
 
 .footer-bottom p {
@@ -1416,6 +1466,7 @@ a{
 }
 
 .write-us-form{
+	position: relative;
 	width: 620px;
 	min-height: 430px;
 	margin: 100px auto;
@@ -1439,26 +1490,33 @@ a{
 }
 
 .close-button{
-	padding: 9px 9px 0 0;
-	align-self: flex-end;
-
 	background-color: inherit;
-	color: #ee3643;
 	border: none;
 }
 
-.close-button:hover,
-.close-button:focus{
-	color: rgb(202, 44, 55);
+.close-button::after{
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	top: 9px;
+	right: 9px;
+
+	background-image: url("../img/close.svg");
 }
 
-.close-button:active{
-	color: rgb(186, 39, 50);
+.close-button:hover::after,
+.close-button:focus::after{
+	background-image: url("../img/closeh.svg");
+}
+
+.close-button:active::after{
+	background-image: url("../img/closea.svg");
 }
 
 .write-us-list{
 	margin: 0;
-	margin-top: 18px;
+	margin-top: 48px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1530,6 +1588,7 @@ a{
 
 .map-popup{
 	width: 940px;
+	position: relative;
 	min-height: 446px;
 	padding: 0;
 	margin: 100px auto;
@@ -1539,10 +1598,18 @@ a{
 	box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 }
 
+.map-popup button{
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	
+	border: none;
+}
+
 .map-popup a{
 	margin: 0;
 	padding: 0;
-	display: flex;
 }
 
 .site-navigation-list{
