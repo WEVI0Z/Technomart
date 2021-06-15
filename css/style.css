@@ -169,7 +169,7 @@ a{
 	opacity: 0.3;
 }
 
-.bookmark::before{
+.main-header .bookmark::before{
 	content: "";
 	position: absolute;
 	left: 17px;
@@ -181,12 +181,12 @@ a{
 	opacity: 0.3;
 }
 
-.bookmark:hover::before,
-.bookmark:focus::before{
+.main-header .bookmark:hover::before,
+.main-header .bookmark:focus::before{
 	opacity: 1;
 }
 
-.bookmark:active::before{
+.main-header .bookmark:active::before{
 	opacity: 0.5;
 }
 
@@ -199,7 +199,7 @@ a{
 	opacity: 0.5;
 }
 
-.bookmark{
+.main-header .bookmark{
 	box-sizing: border-box;
 	padding-left: 44px;
 }
@@ -1820,6 +1820,7 @@ a{
 .main-catalog-product{
 	width: 700px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 }
 
@@ -1837,8 +1838,9 @@ a{
 .main-catalog-sort h2{
 	margin: 0;
 	padding: 10px 0;
+	box-sizing: border-box;
+	width: 240px;
 	padding-left: 19px;
-	padding-right: 140px;
 	
 	font-size: 13px;
 	line-height: 18px;
@@ -1859,11 +1861,42 @@ a{
 }
 
 .main-catalog-sort-method{
-	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	width: 354px;
 }
 
-.main-catalog-sort-method li{
-	padding-right: 71px;
+.main-catalog-method-item.active a{
+	background: none;
+}
+
+.main-catalog-method-item.active span{
+	opacity: 1;
+	color: #ee3643;
+}
+
+.main-catalog-method-item:hover span,
+.main-catalog-method-item:focus span{
+	opacity: 1;
+	color: #000;
+}
+
+.main-catalog-method-item a{
+	background-image: linear-gradient(to right, #ee3643 50%, transparent 50%);
+	background-position: 0 1.04em;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+}
+
+.main-catalog-method-item:hover a,
+.main-catalog-method-item:focus a{
+	text-decoration: underline #ee3643;
+
+	background: none;
+}
+
+.main-catalog-sort-item span{
+	opacity: 0.3;
 }
 
 .main-catalog-sort-method li:last-child{
@@ -1873,22 +1906,48 @@ a{
 .main-catalog-sort-way{
 	display: flex;
 	justify-content: space-between;
-	width: 80px;
+	width: 106px;
+	position: relative;
 }
 
-.main-catalog-sort-item a{
-	text-decoration: underline;
+.main-catalog-way-item:first-child::before{
+	content: "";
+	width: 11px;
+	height: 10px;
+	position: absolute;
+	right: 49px;
+	top: 14px;
 
-	opacity: 30%;
+	background-image: url("../img/icon-up-dir.svg");
+	opacity: 0.3;
 }
 
-.main-catalog-sort-item a:hover,
-.main-catalog-sort-item a:focus{
-	color: #000;
-	text-decoration: underline;
-	text-decoration-color: #ee3643;
+.main-catalog-way-item:last-child::before{
+	content: "";
+	width: 11px;
+	height: 10px;
+	position: absolute;
+	right: 17px;
+	top: 14px;
 
-	opacity: 100%;
+	background-image: url("../img/icon-up-dir.svg");
+	transform: rotate(180deg);
+	opacity: 0.3;
+}
+
+.main-catalog-way-item:hover::before,
+.main-catalog-way-item:focus::before,
+.main-catalog-way-item:first-child.active:hover::before,
+.main-catalog-way-item:first-child.active:focus::before,
+.main-catalog-way-item:last-child.active:hover::before,
+.main-catalog-way-item:last-child.active:focus::before{
+	opacity: 1;
+	background-image: url("../img/icon-up-dir.svg");
+}
+
+.main-catalog-way-item:first-child.active::before{
+	background-image: url("../img/icon-upa-dir.svg");
+	opacity: 1;
 }
 
 .active a{
