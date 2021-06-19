@@ -51,7 +51,7 @@
                 <div class="authorizated-user">
                     <div class="user">
                         <a href="#" class="user-name">Равшан Джамшутович</a>
-                        <a href="#" class="exit-button">В</a>
+                        <a href="#" class="exit-button" aria-label="Выйти"></a>
                     </div>
                     <div class="interaction">
                         <a href="#">Мои заказы</a>
@@ -102,9 +102,9 @@
         <section class="site-navigation container">
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <ul class="site-navigation-list">
-                <li>
-                    <a href="#">
-                        Главная
+                <li class="site-navigation-home">
+                    <a href="index.html" aria-label="Главная">
+                        <!-- <span class="visually-hidden">Главная</span> -->
                     </a>
                 </li>
                 <li>
@@ -147,31 +147,31 @@
                                 <ul>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="bosch" checked>
+                                            <input type="checkbox" name="bosch" class="visually-hidden" checked>
                                             <span>BOSCH</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="interskol">
+                                            <input type="checkbox" name="interskol" class="visually-hidden">
                                             <span>Интерскол</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="makita" checked>
+                                            <input type="checkbox" name="makita" class="visually-hidden" checked>
                                             <span>Makita</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="dewalt">
+                                            <input type="checkbox" name="dewalt" class="visually-hidden">
                                             <span>DeWalt</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" name="hitachi">
+                                            <input type="checkbox" name="hitachi" class="visually-hidden">
                                             <span>hitachi</span>
                                         </label>
                                     </li>
@@ -182,13 +182,13 @@
                                 <ul>
                                     <li>
                                         <label>
-                                            <input type="radio" name="energy-source" value="accumulator" checked>
+                                            <input type="radio" name="energy-source" class="visually-hidden" value="accumulator" checked>
                                             <span>Аккумуляторные</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="radio" name="energy-source" value="network">
+                                            <input type="radio" name="energy-source" class="visually-hidden" value="network">
                                             <span>Сетевые</span>
                                         </label>
                                     </li>
@@ -406,19 +406,19 @@
             </nav>
             <div class="footer-bottom-wrap">
                 <div class="footer-bottom container">
-                    <p>
+                    <p class="footer-navigation-description">
                         C 2010-2017 Компания "Техномарт"<br>
                         Все права защищены
                     </p>
-                    <ul class="footer-services" aria-label="Соцсети">
+                    <ul class="footer-services">
                         <li>
-                            <img class="vk-icon" src="img/vk-icon.svg" alt="VK">
+                            <a href="#" class="vk-icon" aria-label="VK"></a>
                         </li>
                         <li>
-                            <img class="fb-icon" src="img/fb-icon.svg" alt="FaceBook">
+                            <a href="#" class="fb-icon" aria-label="FaceBook"></a>
                         </li>
                         <li>
-                            <img class="inst-icon" src="img/insta-icon.svg" alt="Instagram">
+                            <a href="#" class="inst-icon" aria-label="Instagram"></a>
                         </li>
                     </ul>
                     <ul class="footer-feedback">
@@ -428,7 +428,7 @@
                         </li>
                         <li>
                             <span>Разработано -</span><br>
-                            <a href="htmlacademy.ru">htmlacademy.ru</a>
+                            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
                         </li>
                     </ul>
                 </div>
