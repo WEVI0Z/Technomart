@@ -103,8 +103,8 @@
             <h2 class="visually-hidden">Навигация по сайту</h2>
             <ul class="site-navigation-list">
                 <li class="site-navigation-home">
-                    <a href="index.html" aria-label="Главная">
-                        <!-- <span class="visually-hidden">Главная</span> -->
+                    <a href="index.html">
+                        <span class="visually-hidden">Главная</span>
                     </a>
                 </li>
                 <li>
@@ -131,17 +131,17 @@
                     <div class="main-catalog-filter">
                         <form action="htttps://echo.htmlacademy.ru" method="GET" class="catalog-filter">
                             <p>Фильтр:</p>
-                            <fieldset class="filter-price">
-                                <legend>Цена:</legend>
-                                <div class="filter-price-block-input">
-                                    <input type="range" min="0" max="3000" step="1">
+                            <div class="filter-price">
+                                <h3>Цена:</h3>
+                                <div class="filter-price-block-slider">
+                                    <div></div>
                                 </div>
                                 <div class="filter-price-block">
                                     <div class="filter-price-block-item">0</div>
                                     <span>-</span>
                                     <div class="filter-price-block-item">3000</div>
                                 </div>
-                            </fieldset>
+                            </div>
                             <fieldset class="filter-fabricators">
                                 <legend>Производители:</legend>
                                 <ul>
@@ -434,7 +434,7 @@
                 </div>
             </div>
         </footer>
-        <section class="main-add">
+        <section class="main-add" hidden>
             <button class="close-button" aria-label="Закрыть"></button>
             <p>Товар добавлен в корзину!</p>
             <div class="main-add-down">

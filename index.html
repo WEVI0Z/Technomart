@@ -287,14 +287,14 @@
                             </li>
                         </ul>
                         <ul class="main-services-list-description">
-                            <li>
+                            <li class="main-services-list-delivery">
                                 <h3>Доставка</h3>
                                 <p>
                                     Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
                                     Ведь мы неплохо заработаем,<br> поднимая его на вам этаж!
                                 </p>
                             </li>
-                            <li>
+                            <li class="main-services-list-guarantee">
                                 <h3>Гарантия</h3>
                                 <p>
                                     Если купленный у нас товар поломается или заискрит,<br>
@@ -303,7 +303,7 @@
                                     Дом уж восстановите как-нибудь сами.
                                 </p>
                             </li>
-                            <li>
+                            <li class="main-services-list-credit">
                                 <h3>Кредит</h3>
                                 <p>
                                     Залезть в долговую яму стало проще!<br>
@@ -404,42 +404,40 @@
                 </div>
             </div>
         </footer>
-        <div class="container">
-            <section class="write-us-form">
-                <h2 class="visually-hidden">Напишите нам</h2>
-                <button class="close-button" aria-label="Закрыть"></button>
-                <form class="help-form" method="post" action="htttps://echo.htmlacademy.ru">
-                    <ul class="write-us-list">
-                        <li class="write-us-list-item">
-                            <label>
-                                Ваше имя:<br>
-                                <input type="text" name="name" placeholder="Имя Фамилия">
-                            </label>
-                        </li>
-                        <li class="write-us-list-item">
-                            <label>
-                                Ваш e-mail:<br>
-                                <input type="email" name="e-mail" placeholder="email@example.com">
-                            </label>
-                        </li>
-                        <li class="write-us-list-item">
-                            <label>
-                                Текст письма:<br>
-                                <textarea name="text"  placeholder="В свободной форме"></textarea>
-                            </label>
-                        </li>
-                    </ul>
-                    <div class="write-us-button-wrap">
-                        <button type="submit" class="write-us-button red-button">Отправить</button>
-                    </div>
-                </form>
-            </section>
-            <section class="map-popup" hidden>
-                <button class="close-button" aria-label="Закрыть"></button>
-                <a href="#">
-                    <img src="img/map-popup.jpg" width="940" height="446" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
-                </a>
-            </section>
-        </div>
+        <section class="write-us-form" hidden>
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <button class="close-button" aria-label="Закрыть"></button>
+            <form class="help-form" method="post" action="htttps://echo.htmlacademy.ru">
+                <ul class="write-us-list">
+                    <li class="write-us-list-item">
+                        <label>
+                            Ваше имя:<br>
+                            <input type="text" name="name" placeholder="Имя Фамилия">
+                        </label>
+                    </li>
+                    <li class="write-us-list-item">
+                        <label>
+                            Ваш e-mail:<br>
+                            <input type="email" name="e-mail" placeholder="email@example.com">
+                        </label>
+                    </li>
+                    <li class="write-us-list-item">
+                        <label>
+                            Текст письма:<br>
+                            <textarea name="text"  placeholder="В свободной форме"></textarea>
+                        </label>
+                    </li>
+                </ul>
+                <div class="write-us-button-wrap">
+                    <button type="submit" class="write-us-button red-button">Отправить</button>
+                </div>
+            </form>
+        </section>
+        <section class="map-popup" hidden>
+            <button class="close-button" aria-label="Закрыть"></button>
+            <a href="#">
+                <img src="img/map-popup.jpg" width="940" height="446" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
+            </a>
+        </section>
     </body>
 </html>
