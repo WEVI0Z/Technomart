@@ -152,8 +152,7 @@ a{
 }
 
 .main-header{
-	/* min-height: 320px; */
-	padding-bottom: 65px;
+	min-height: 320px;
 
 	background-color: #f3f7f8;
 }
@@ -166,7 +165,7 @@ a{
 	width: 15px;
 	height: 15px;
 
-	background-image: url("../img/icon-search.svg");
+	background-image: url("../img/cart-icon.svg");
 	opacity: 0.3;
 }
 
@@ -210,6 +209,42 @@ a{
 	padding-left: 50px;
 }
 
+.cart-active{
+	background-color: #ee3643;
+	box-sizing: border-box;
+	padding-left: 50px;
+}
+
+.cart-active:hover,
+.cart-active:focus{
+	background-color: #ca2c37;
+}
+
+.cart-active:active{
+	background-color: #ba2732;
+}
+
+.cart-active::before{
+	content: "";
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	width: 15px;
+	height: 15px;
+
+	background-image: url("../img/cart-icon.svg");
+	opacity: 0.3;
+}
+
+.cart-active:hover::before,
+.cart-active:focus::before{
+	opacity: 1;
+}
+
+.cart-active:active::before{
+	opacity: 0.5;
+}
+
 .main-header-buy{
 	width: 150px;
 	padding-top: 12px;
@@ -240,30 +275,27 @@ a{
 
 .header-down{
 	display: flex;
-	/* min-height: 153px; */
 	justify-content: flex-start;
-	/* align-items: center; */
 	padding: 0 10px;
 	padding-top: 46px;
-	padding-bottom: 40px;
+	padding-bottom: 16px;
 }
 
 .heading{
-	display: block;
-	justify-self: flex-start;
 	width: 200px;
-	padding-left: 82px;
-	padding-right: 51px;
-	margin-right: 10px;
-
-	/* outline: 1px solid; */
+	padding-left: 53px;
+	margin-right: 57px;
+	margin-top: 0;
+	
+	font-size: 16px;
+	line-height: 23px;
 }
 
 .main-header-contacts{
 	justify-self: flex-start;
 	padding: 0px;
 	margin: 0px;
-	margin-right: 41px;
+	margin-right: 61px;
 	margin-left: 10px;
 	width: 270px;
 
@@ -303,6 +335,7 @@ a{
 
 .main-header-contacts .address{
 	margin: 0;
+	margin-top: 1px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -1194,7 +1227,7 @@ a{
 	background-image: url("../img/credit.png");
 }
 
-.main-services-list-description li:nth-child(1),
+.main-services-list-description li:nth-child(3),
 .main-services-list-description li:nth-child(2){
 	display: none;
 }
