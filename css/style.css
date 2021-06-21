@@ -666,17 +666,17 @@ a{
 
 .main-suggestions-list h3{
 	margin-left: 23px;
+	margin-top: 22px;
+	margin-bottom: 13px;
 
-	line-height: 13px;
-}
-
-.combined-blocks h3:nth-child(1){
-	margin-top: 25px;
+	line-height: 30px;
+	font-size: 24px;
 }
 
 .main-suggestions-button{
 	margin-left: 25px;
 	padding: 8.5px;
+	box-sizing: border-box;
 	width: 135px;
 
 	color: #fff;
@@ -722,11 +722,11 @@ a{
 	flex-grow: 0;
 	margin-top: 20px;
 	position: relative;
-	/* z-index: 9; */
 }
 
 .main-suggestions-slider h3{
 	margin-top: 0px;
+	padding: 0;
 }
 
 .main-suggestions-slider ul{
