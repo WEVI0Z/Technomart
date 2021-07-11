@@ -295,7 +295,7 @@ a{
 	justify-self: flex-start;
 	padding: 0px;
 	margin: 0px;
-	margin-right: 61px;
+	margin-right: 21px;
 	margin-left: 10px;
 	width: 270px;
 
@@ -344,7 +344,7 @@ a{
 
 .authorization{
 	display: flex;
-	margin-left: 10px;
+	margin-left: 50px;
 
 	font-size: 21px;
 	line-height: 21px;
@@ -403,6 +403,10 @@ a{
 	color: rgba(0, 0, 0, 30%);
 }
 
+.authorizated-user{
+	margin-left: 30px;
+}
+
 .authorizated-user .user-name{
 	padding-left: 47px;
 	padding-right: 39px;
@@ -425,16 +429,6 @@ a{
 .user{
 	position: relative;
 }
-
-/* .user .exit-button{
-	color: rgb(197, 197, 197);
-}
-
-.user .exit-button:hover,
-.user .exit-button:focus{
-	color: rgb(50, 66, 92);
-} */
-
 .user .user-name:active{
 	color: rgba(0, 0, 0, 30%);
 }
@@ -482,7 +476,7 @@ a{
 }
 
 .authorizated-user .interaction{
-	padding-top: 10px;
+	padding-top: 7px;
 	padding-left: 17px;
 
 	font-size: 16px;
@@ -904,7 +898,6 @@ a{
 	margin-bottom: 0;
 	margin-right: -20px;
 	display: flex;
-	/* justify-content: space-between;*/
 	flex-wrap: wrap;
 	padding: 0;
 
@@ -916,7 +909,7 @@ a{
 	margin-top: 20px;
 	margin-right: 20px;
 	width: 218px;
-	min-height: 318px;
+	min-height: 316px;
 
 	border: 1px solid #e5e5e5;
 }
@@ -1067,7 +1060,6 @@ a{
 	display: flex;
 	flex-wrap: wrap;
 	align-self: center;
-	/* justify-content: space-between; */
 	padding: 0;
 	
 	list-style-type: none;
@@ -1739,6 +1731,7 @@ a{
 	flex-wrap: wrap;
 	align-content: center;
 	margin-left: -40px;
+	font-family: 'PT Sans', Arial, sans-serif;
 
 	text-transform: uppercase;
 	font-size: 13px;
@@ -1807,6 +1800,7 @@ a{
 	width: 220px;
 
 	text-transform: uppercase;
+	font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .catalog-filter p{
@@ -1815,6 +1809,7 @@ a{
 	margin: 0;
 
 	font-size: 13px;
+	font-family: 'PT Sans', Arial, sans-serif;
 	line-height: 18px;
 
 	background-color: #f7f3ec;
@@ -1826,6 +1821,7 @@ a{
 	display: flex;
 	justify-content: center;
 	min-height: 80px;
+	margin-top: 10px;
 
 	background-color: #f7f3ec;
 	
@@ -1834,7 +1830,7 @@ a{
 
 .filter-price h3{
 	margin: 0px;
-	margin-top: 13.5px;
+	margin-top: 12px;
 	margin-bottom: 16,5px;
 
 	font-size: 17px;
@@ -1843,18 +1839,59 @@ a{
 
 .filter-price-block-item{
 	width: 95px;
+	margin-top: 5px;
+	padding-top: 7px;
+	padding-bottom: 9px;
 
-	text-align: center;
+	text-align: center;	
+	line-height: 18px;
 
 	border-radius: 2px;
 	background-color: #f7f3ec;
 }
 
+.filter-price-block-item:first-child::after{
+	content: "";
+	width: 10px;
+	position: absolute;
+	left: 105px;
+	top: 22px;
+
+	border-top: 1px solid black;
+}
+
 .filter-price-block{
 	margin-top: 9px;
 	margin-bottom: 44px;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+}
+
+.filter-price{
+	position: relative;
+}
+
+.filter-price::after{
+	content: "";
+	width: 220px;
+	position: absolute;
+	bottom: 15px;
+
+	border-top: 1px solid black;
+}
+
+.filter-fabricators{
+	position: relative;
+}
+
+.filter-fabricators::after{
+	content: "";
+	width: 220px;
+	position: absolute;
+	bottom: 19px;
+
+	border-top: 1px solid black;
 }
 
 .filter-fabricators ul{
@@ -1869,7 +1906,7 @@ a{
 	list-style-type: none;
 }
 .filter-fabricators li{
-	margin-bottom: 17px;
+	margin-bottom: 20.6px;
 }
 
 .filter-fabricators span{
@@ -1915,7 +1952,7 @@ a{
 	padding: 0;
 	margin: 0;
 	margin-top: 14px;
-	margin-bottom: 75px;
+	margin-bottom: 78px;
 
 	line-height: 20px;
 	font-size: 15px;
@@ -1924,7 +1961,7 @@ a{
 }
 
 .filter-energy-source li{
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 
 .filter-energy-source span{
@@ -1953,6 +1990,7 @@ a{
 .main-catalog fieldset{
 	padding: 0;
 	line-height: 30px;
+	margin: 0;
 
 	border: none;
 }
@@ -1960,10 +1998,12 @@ a{
 .catalog-filter button{
 	width: 138px;
 	min-height: 36px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 
-	font-family: inherit;
+	
+	font-family: 'PT Sans', Arial, sans-serif;
 	text-transform: uppercase;
+	font-size: 13px;
 
 	border: solid;
 	border-width: 1px;
@@ -1991,6 +2031,8 @@ a{
 .main-catalog-sort{
 	display: flex;
 	width: 700px;
+
+	font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .main-catalog-sort ul{
