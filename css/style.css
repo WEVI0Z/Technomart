@@ -910,12 +910,14 @@ a{
 	margin-right: 20px;
 	width: 218px;
 	min-height: 316px;
+	font-family: 'PT Sans', Arial, sans-serif;
 
 	border: 1px solid #e5e5e5;
 }
 
 .main-popular-list-item:hover .action-choice {
 	display: flex;
+	font-family: 'Cuprum', Arial, sans-serif;
 }
 
 .main-popular-list-item h3{
@@ -943,7 +945,10 @@ a{
 
 .item-price-and-discount a{
 	/* margin-bottom: 20px; */
+	/* padding: 11px 0; */
+	box-sizing: border-box;
 	padding: 11px 0;
+	padding-left: 15px;
 	position: relative;
 	align-self: start;
 	width: 122px;
@@ -2217,12 +2222,12 @@ a{
 
 .main-catalog-description{
 	padding-top: 62px;
-	padding-bottom: 73px;
+	padding-bottom: 69px;
 }
 
 .main-catalog-description h2{
 	margin: 0;
-	padding-bottom: 38px;
+	padding-bottom: 26px;
 
 	line-height: 30px;
 	font-size: 30px;
@@ -2233,6 +2238,7 @@ a{
 	margin: 0;
 
 	font-size: 13px;
+	font-family: 'PT Sans', Arial, sans-serif;
 	line-height: 24px;
 }
 
