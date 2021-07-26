@@ -280,24 +280,24 @@
                     <div class="main-services-block">
                         <ul class="main-services-list-suggestions">
                             <li class="main-services-list-item main-services-list-item-active">
-                                <button>Доставка</button>
+                                <button class="services-list-button">Доставка</button>
                             </li>
                             <li class="main-services-list-item">
-                                <button>Гарантия</button>
+                                <button class="services-list-button">Гарантия</buttonc>
                             </li>
                             <li class="main-services-list-item">
-                                <button>Кредит</button>
+                                <button class="services-list-button">Кредит</button>
                             </li>
                         </ul>
                         <ul class="main-services-list-description">
-                            <li class="main-services-list-delivery">
+                            <li class="main-services-description-item main-services-list-delivery show-flex-popup">
                                 <h3>Доставка</h3>
                                 <p>
                                     Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
                                     Ведь мы неплохо заработаем,<br> поднимая его на вам этаж!
                                 </p>
                             </li>
-                            <li class="main-services-list-guarantee">
+                            <li class="main-services-description-item main-services-list-guarantee">
                                 <h3>Гарантия</h3>
                                 <p>
                                     Если купленный у нас товар поломается или заискрит,<br>
@@ -306,7 +306,7 @@
                                     Дом уж восстановите как-нибудь сами.
                                 </p>
                             </li>
-                            <li class="main-services-list-credit">
+                            <li class="main-services-description-item main-services-list-credit">
                                 <h3>Кредит</h3>
                                 <p>
                                     Залезть в долговую яму стало проще!<br>
@@ -343,7 +343,9 @@
                         Вы можете забрать товар сами,
                         заехав в наш офис:
                     </p>
-                    <img src="img/info-map.png" width="300" height="158" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
+                    <a href="#" class="contacts-map-button">
+                        <img src="img/info-map.png" width="300" height="158" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
+                    </a>
                     <a href="#" class="red-button main-contacts-button">
                         Заблудились? Напишите нам
                     </a>
@@ -407,7 +409,7 @@
                 </div>
             </div>
         </footer>
-        <section class="write-us-form" hidden>
+        <section class="write-us-form">
             <h2 class="visually-hidden">Напишите нам</h2>
             <button class="close-button" aria-label="Закрыть"></button>
             <form class="help-form" method="post" action="htttps://echo.htmlacademy.ru">
@@ -436,11 +438,13 @@
                 </div>
             </form>
         </section>
-        <section class="map-popup" hidden>
+        <section class="map-popup">
             <button class="close-button" aria-label="Закрыть"></button>
+            <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003067!2d30.320858716004572!3d59.93871916905424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1626780600065!5m2!1sru!2sby" width="940" height="446" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <a href="#">
                 <img src="img/map-popup.jpg" width="940" height="446" alt="город Санкт-Петербург, улица Б. Конюшенная, дом 19/8">
             </a>
         </section>
+        <script src="js/script.js"></script>
     </body>
 </html>

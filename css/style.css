@@ -1136,7 +1136,7 @@ a{
 	flex-direction: column;
 	/* justify-content: center; */
 	margin: 0;
-	margin-top: 65px;
+	margin-top: 70px;
 	padding: 0;
 	min-height: 272px;
 	position: relative;
@@ -1153,6 +1153,7 @@ a{
 	position: absolute;
 	width: 10px;
 	height: 272px;
+	top: -45px;
 	right: 0px;
 
 	background-image: url("../img/service-shadow.png");
@@ -1207,8 +1208,8 @@ a{
 	list-style-type: none;
 }
 
-.main-services-list-description li{
-	display: flex;
+.main-services-description-item{
+	display: none;
 	flex-direction: column;
 	width: 380px;
 	min-height: 272px;
@@ -1247,11 +1248,6 @@ a{
 	background-image: url("../img/credit.png");
 }
 
-.main-services-list-description li:nth-child(3),
-.main-services-list-description li:nth-child(2){
-	display: none;
-}
-
 .main-services-list-description h3{
 	margin: 0;
 
@@ -1280,7 +1276,7 @@ a{
 
 .main-description-and-contacts-block{
 	margin-top: 80px;
-	margin-bottom: 85px;
+	margin-bottom: 87px;
 
 	display: flex;
 	justify-content: space-between;
@@ -1574,7 +1570,7 @@ a{
 	position: fixed;
 	width: 620px;
 	min-height: 430px;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	top: 50%;
 	left: 50%;
@@ -1695,7 +1691,20 @@ a{
 	border-style: none;
 }
 
+.interactive-map{
+	position: absolute;
+	z-index: 2;
+}
+
+.interactive-map.ya-site-form table td {
+	border: none;
+}
+
+.ya-site-form__search-input{ border: 0px;}
+
+
 .map-popup{
+	display: none;
 	width: 940px;
 	position: fixed;
 	min-height: 446px;
@@ -1707,6 +1716,14 @@ a{
 	-webkit-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 	-moz-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
 	box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+}
+
+.show-usual-popup{
+	display: block;
+}
+
+.show-flex-popup{
+	display: flex !important;
 }
 
 .map-popup button{
@@ -1726,7 +1743,7 @@ a{
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	z-index: 2;
+	z-index:1;
 }
 
 .site-navigation-list{
@@ -1825,12 +1842,89 @@ a{
 .filter-price-block-slider{
 	display: flex;
 	justify-content: center;
+	position: relative;
 	min-height: 80px;
 	margin-top: 10px;
 
 	background-color: #f7f3ec;
 	
 	border-radius: 2px;
+}
+
+.filter-price-block-slider .slider-back-line{
+	position: absolute;
+	top: 41px;
+	width: 178px;
+	left: 20px;
+	height: 0px;
+	
+	border: solid 1px #d7dcde;
+	background-color: #d7dcde;
+}
+
+.filter-price-block-slider .slider-fully-line{
+	position: absolute;
+	top: 41px;
+	left: 20px;
+	width: 138px;
+	height: 0px;
+	
+	border: solid 1px #00ca74;
+	background-color: #00ca74;
+}
+
+.filter-price-block-slider .slider-border-first{
+	position: absolute;
+	width: 20px;
+	min-height: 20px;
+	top: -10px;
+	left: -1px;
+
+	border-radius: 50%;
+	border: none;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+}
+
+.filter-price-block-slider .slider-border-first::after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+
+	background-color: #ababab;
+	border-radius: 50%;
+	top: 8px;
+	left: 8.5px;
+}
+
+.filter-price-block-slider .slider-border-second{
+	position: absolute;
+	width: 20px;
+	min-height: 20px;
+	top: -10px;
+	right: -20px;
+
+	border-radius: 50%;
+	border: none;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 5px 4px 0px rgba(34, 60, 80, 0.2);
+}
+
+.filter-price-block-slider .slider-border-second::after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+
+	background-color: #ababab;
+	border-radius: 50%;
+	top: 8px;
+	left: 8.5px;
 }
 
 .filter-price h3{
@@ -2245,7 +2339,7 @@ a{
 .main-add{
 	width: 620px;
 	min-height: 277px;
-	display: flex;
+	display: none;
 	position: relative;
 	flex-direction: column;
 	position: fixed;
