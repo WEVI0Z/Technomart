@@ -2191,7 +2191,7 @@ a{
 	background-image: linear-gradient(to right, #ee3643 50%, transparent 50%);
 	background-position: 0 1.04em;
 	background-repeat: repeat-x;
-	background-size: 3px 3px;
+	background-size: 1px 1px;
 }
 
 .main-catalog-method-item:hover a,
